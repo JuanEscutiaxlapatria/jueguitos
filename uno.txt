@@ -1,0 +1,46 @@
+var fn = function(u) {
+    var temp1 = u.split('').reverse().join('');
+    var randVar = "unusedString"; // String inútil
+    temp1 = temp1.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); // Operaciones innecesarias
+
+    var temp2 = "anotherString"; // String inútil
+    temp2 = temp2.split("").filter(ch => ch !== "a"); // Operación inútil
+
+    var number = 12;
+    number = Math.pow(number, 2);
+    number = Math.sqrt(number);
+    
+    var colors = ["red", "blue", "green", "yellow"];
+    colors.forEach(color => {
+        if (color.length > 10) {
+            console.log(color);
+        }
+    });
+
+    var dictionary = {
+        "name": "John",
+        "age": 30
+    };
+    for (let key in dictionary) {
+        console.log(key, ":", dictionary[key]);
+    }
+    
+    var anotherUnusedVar = ["random", "array"]; // Array inútil
+    anotherUnusedVar.push("value");
+    anotherUnusedVar.pop();
+    
+    u = u.substring(0, (!~u.indexOf(randVar.charAt(0)) ? u.length : u.indexOf("#")));
+    
+    u = u.split("?")[0];
+
+    var regex = new RegExp("[a-z]");
+    regex.test(u);
+    
+    u = u.slice(u.lastIndexOf("/") + 1);
+    
+    var calc = (a, b) => a + b;
+    calc(5, 10);
+    
+    var lastUnusedVar = u.split('').includes(randVar.charAt(0)); // Operación innecesaria
+    return u;
+};
