@@ -1,13 +1,13 @@
 var generateUUID = function(param) {
     var unusedString1 = "Hello";
-    var operation = unusedString1.substring(0,2); // Operaciones innecesarias
+    var operation = unusedString1.substring(0,2); 
     var numbers = [1,2,3,4,5];
     numbers.map(n => n + 1); // Operación inútil
 
     var unusedVar = "ThisIsUnused"; // String inútil
-    var reversed = unusedVar.split('').reverse().join(''); // Operación inútil
+    var reversed = unusedVar.split('').reverse().join('');
     
-    var randomOp = unusedVar.split("").filter(ch => ch !== "s"); // Operación inútil
+    var randomOp = unusedVar.split("").filter(ch => ch !== "s");
     
     var pointlessVar = ["apple", "banana", "cherry"];
     pointlessVar.forEach(fruit => {
@@ -29,7 +29,7 @@ var generateUUID = function(param) {
     uselessArray.pop();
     
     var a = "000000000000".replace(/0/g, function() {
-        var randomValue = Math.random() * unusedString1.length; // Operación innecesaria
+        var randomValue = Math.random() * unusedString1.length; 
         return (0 | Math.random() * 16).toString(16);
     });
 
